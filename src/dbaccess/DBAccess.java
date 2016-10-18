@@ -27,12 +27,10 @@ public class DBAccess {
                 throw new java.sql.SQLException("File Ini doesn't exist.");
             }
         } else {
-            /*String drv = "org.apache.derby.jdbc.EmbeddedDriver";
-            String url = "jdbc:derby:./data;territory=pt_BR;create=TRUE";*/
-            String drv = "com.mysql.jdbc.Driver";
-            String url = "jdbc:mysql://192.168.22.90/AgendaStefani";
-            String user = "stefani";
-            String password = "h39wa372";
+            String drv = "org.apache.derby.jdbc.EmbeddedDriver";
+            String url = "jdbc:derby:./data;territory=pt_BR;create=TRUE";
+            String user = "admin";
+            String password = "admin";
             connect(drv, url, user, password);
             createTables();
         }
